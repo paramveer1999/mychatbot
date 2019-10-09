@@ -1,0 +1,50 @@
+import random
+import datetime
+import webbrowser
+import wikipedia
+
+greetings = ['hola', 'hello', 'hi', 'Hi', 'hey!','hey']
+random_greeting = random.choice(greetings)
+
+question = ['how are you?','how are you doing?','good morning, how are you?']
+responses = ["I'm fine",'I am doing well, how about you?']
+
+question1 = ['time','date']
+question2 = ['bye','goodbye','leave']
+response2 = ['See you again!','Have a great day!']
+cmd1 = ['youtube','google','facebook','gmail']
+cmd2 = ['search','about']
+var1 = ['who made you', 'who created you']
+var2 = ['I_was_created_by_Edward_right_in_his_computer.', 'Edward', 'Some_guy_whom_i_never_got_to_know.']
+var3 = ['thank you']
+var4 = ['youre welcome', 'glad i could help you']
+random_response = random.choice(responses)
+
+while True:
+        userInput = str(input("Me: "))
+        if userInput in greetings:
+                random_greeting = random.choice(greetings)
+                print("Bot: ",random_greeting)
+        elif userInput in question:
+                random_response = random.choice(responses)
+                print("Bot: ",random_response)
+        elif userInput in question1:
+                x = datetime.datetime.now()
+                print("Bot: Date & Time ",x)
+        elif userInput in cmd1:
+                string1=("www."+userInput+".com")
+                webbrowser.open(string1)
+        elif userInput in var1:
+                print("Bot:",random.choice(var2))
+        elif userInput in var3:
+                print("Bot:",random.choice(var4))
+        elif userInput in question2:
+                print("Bot:",random.choice(response2))
+                exit()
+        elif userInput in cmd2:
+                string2=str(input("Bot: Enter topic to search="))
+                print(wikipedia.summary(string2))
+                print("Bot: I hope the information was upto the mark!")
+        else:
+                print("I did not understand what you said")
+                
