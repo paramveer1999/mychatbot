@@ -11,16 +11,16 @@ responses = ["I'm fine",'I am doing well, how about you?']
 
 question1 = ['time','date']
 question2 = ['bye','goodbye','leave']
-response2 = ['See you again!','Have a great day!']
+response2 = ['See you again hahah!','Have a great day!']
 cmd1 = ['youtube','google','facebook','gmail']
 cmd2 = ['search','about']
 var1 = ['who made you', 'who created you']
 var2 = ['I_was_created_by_Edward_right_in_his_computer.', 'Edward', 'Some_guy_whom_i_never_got_to_know.']
 var3 = ['thank you']
-var4 = ['youre welcome', 'glad i could help you']
+var4 = ['you re welcome', 'glad i could help you']
 random_response = random.choice(responses)
 
-while True:
+while 1:
         userInput = str(input("Me: "))
         if userInput in greetings:
                 random_greeting = random.choice(greetings)
@@ -32,7 +32,7 @@ while True:
                 x = datetime.datetime.now()
                 print("Bot: Date & Time ",x)
         elif userInput in cmd1:
-                string1=("www."+userInput+".com")
+                string1=("www."+userInput+" .com")
                 webbrowser.open(string1)
         elif userInput in var1:
                 print("Bot:",random.choice(var2))
