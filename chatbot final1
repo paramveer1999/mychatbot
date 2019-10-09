@@ -16,8 +16,8 @@ cmd1 = ['youtube','google','facebook','gmail']
 cmd2 = ['search','about']
 var1 = ['who made you', 'who created you']
 var2 = ['I_was_created_by_Edward_right_in_his_computer.', 'Edward', 'Some_guy_whom_i_never_got_to_know.']
-var3 = ['thank you']
-var4 = ['youre welcome', 'glad i could help you']
+var3 = ['thank you very much']
+var5 = ['youre welcome', 'glad i could help you']
 random_response = random.choice(responses)
 
 while True:
@@ -30,7 +30,7 @@ while True:
                 print("Bot: ",random_response)
         elif userInput in question1:
                 x = datetime.datetime.now()
-                print("Bot: Date & Time ",x)
+                print("Bots: Date & Time ",x)
         elif userInput in cmd1:
                 string1=("www."+userInput+".com")
                 webbrowser.open(string1)
