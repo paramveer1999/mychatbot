@@ -17,10 +17,10 @@ cmd2 = ['search','about']
 var1 = ['who made you', 'who created you']
 var2 = ['I_was_created_by_Edward_right_in_his_computer.', 'Edward', 'Some_guy_whom_i_never_got_to_know.']
 var3 = ['thank you very much']
-var5 = ['youre welcome', 'glad i could help you']
+var4 = ['youre welcome', 'glad i could help you']
 random_response = random.choice(responses)
 
-while True:
+while 1:
         userInput = str(input("Me: "))
         if userInput in greetings:
                 random_greeting = random.choice(greetings)
