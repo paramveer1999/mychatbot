@@ -3,6 +3,7 @@ import datetime
 import webbrowser
 import wikipedia
 import numpy
+import pandas
 vvcc
 greetings = ['hola', 'hello', 'hi', 'Hi', 'hey!','hey']
 random_greeting = random.choice(greetings)
