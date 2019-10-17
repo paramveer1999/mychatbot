@@ -26,7 +26,7 @@ var4 = ['you re welcome', 'glad i could help you']
 
 random_response = random.choice(responses)
 
-while 1:
+while True:
         userInput = str(input("Me: "))
         if userInput in greetings:
                 random_greeting = random.choice(greetings)
