@@ -4,6 +4,7 @@ import webbrowser
 import wikipedia
 import numpy
 import pandas
+import matplot
 vvcc
 greetings = ['hola', 'hello', 'hi', 'Hi', 'hey!','hey']
 random_greeting = random.choice(greetings)
