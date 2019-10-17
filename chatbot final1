@@ -14,7 +14,7 @@ question2 = ['bye','goodbye','leave']
 response2 = ['See you again hahah!','Have a great day!']
 cmd1 = ['youtube','google','facebook','gmail']
 cmd2 = ['search','about']
-var1 = ['who made you', 'who created you']
+var1 = ['who made you', 'who created you','how you have been invented']
 var2 = ['I_was_created_by_Edward_right_in_his_computer.', 'Edward', 'Some_guy_whom_i_never_got_to_know.']
 
 
@@ -49,5 +49,5 @@ while 1:
                 print(wikipedia.summary(string2))
                 print("Bot: I hope the information was upto the mark!")
         else:
-                print("I did not understand what you said")
+                print("I did not understand what you said or can you repeat please")
                 
